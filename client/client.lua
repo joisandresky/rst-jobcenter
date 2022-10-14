@@ -22,15 +22,15 @@ end)
 
 local function createBlip()
     if pedSpawned then return end
-
+    
     local JobCenterBlip = AddBlipForCoord(Config.Location["x"], Config.Location["y"], Config.Location["z"])
-    SetBlipSprite(JobCenterBlip, Config.Location["blipsprite"])
-    SetBlipScale(JobCenterBlip, Config.Location["blipscale"])
+    SetBlipSprite(JobCenterBlip, 457)
+    SetBlipScale(JobCenterBlip, 0.8)
     SetBlipDisplay(JobCenterBlip, 4)
-    SetBlipColour(JobCenterBlip, Config.Location["blipcolor"])
+    SetBlipColour(JobCenterBlip, 0)
     SetBlipAsShortRange(JobCenterBlip, true)
     BeginTextCommandSetBlipName("STRING")
-    AddTextComponentSubstringPlayerName(Config.Location["label"])
+    AddTextComponentSubstringPlayerName("Job Center")
     EndTextCommandSetBlipName(JobCenterBlip)
 end
 
