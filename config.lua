@@ -9,6 +9,19 @@ Config.JobMenus = {
         isMenuHeader = true
     },
     {
+        header = "Being Lazy And Doing Nothing",
+        txt = "You Are trash!",
+        icon = "fas fa-trash",
+        params = {
+            isServer = true,
+            event = "rst-jobcenter:server:takeJob",
+            args = {
+                jobName = "unemployed",
+                jobLabel = "Being Lazy And Doing Nothing"
+            }
+        }
+    },
+    {
         header = "Garbage Collector",
         txt = "Collect garbage around the city and make money from it",
         icon = "fas fa-trash",
@@ -44,19 +57,6 @@ Config.JobMenus = {
             args = {
                 jobName = "trucker",
                 jobLabel = "Trucker"
-            }
-        }
-    },
-    {
-        header = "Hotdog Hawker Stall",
-        txt = "Being Uncle/Aunty to Sell Hotdog for NPC",
-        icon = "fas fa-hotdog",
-        params = {
-            isServer = true,
-            event = "rst-jobcenter:server:takeJob",
-            args = {
-                jobName = "hotdog",
-                jobLabel = "Hotdog Hawker Stall"
             }
         }
     },
